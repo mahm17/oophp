@@ -11,4 +11,4 @@ namespace Anax\View;
 
 ?>
 
-FOOTER
+Markus Holmberg student på BTH.

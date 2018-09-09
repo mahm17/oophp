@@ -1,25 +1,15 @@
 ---
-title: "Min fina titel"
+title: "Min me sida"
 ---
 Min me-sida i kursen oophp
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
+[FIGURE src="image/markus.jpg?w=400" caption="Bild på mig"]
 
-[FIGURE src="image/me.jpg?w=500" caption="Bild på mig"]
+Mitt namn är Markus Holmberg jag är 20 år. jag föddes i Singapore och bodde där i ungefär 4 månader innan jag flyttade till Sverige. Jag bodde i Kungälv tills jag var cirka 4 år, sen flyttade vi till Stora Höga och där har jag bott sedan dess.
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Jag gick på Stora Högaskolan år 1-9 sen pluggade jag Teknik med inriktning Informations och medieteknik på Nösnäsgymnasiet i Stenungsund. Nu läser jag webbprogrammering i Karlskrona på Blekinges Tekniska Högskola.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+När jag var mindre så började jag spela fotboll som jag spelade i ett antal år. Har även gått i en del andra sporter såsom, gymnastik, pingis, badminton. Men fotboll var det enda som jag fastnade för. Slutade dock i fotboll för ett antal år sedan då jag inte tyckte det var längre. För nåt år sedan började jag spela golf istället. Men när det kommer till träning så går jag på gym ett antal dagar i veckan för att hålla igång.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+På vintern tycker jag också väldigt mycket om att åka skidor, detta har varit ett stort intresse för mig ändå sedan jag var ungefär fem år. Har mer och mer kommit in i slopestyle åkning, vilket innebär att man kör mycket i park istället för att åka slalom. När det inte finns nån snå ute så brukar jag vara mycket med kompisarna och hitta på en del olika aktiviteter. Tycker också om att sitta framför datorn såklart.
