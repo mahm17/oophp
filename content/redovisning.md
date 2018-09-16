@@ -32,9 +32,25 @@ Min TIL för detta kursmomentet är hur objekt och klasser funkar i PHP sen ocks
 Kmom02
 -------------------------
 
-Här är redovisningstexten
+###Hur gick det att överföra spelet “Gissa mitt nummer” in i din me-sida?
 
+Det gick rätt så felfritt för mig. Det jag hade mest problem med var att få bort min session, då jag redan hade en startad så kunde jag inte använda samma på me-sidan. Men jag löste det sen genom att göra en destroy så nu ska allt funka. Sen la jag också in POST och GET på sidan då jag hade lite tid över. Dom två versionerna hade jag inga problem med att lägga in, dom funkade nästan direkt utan att behöva ändra något. Det jobbigaste med uppgiften var däremot alla filer och mappar man skulle hålla på och jobba i. Det var lätt att man glömmde av sig och inte visste vart man skulle leta efter tex routes. Men det är nog något som sätter sig ju mer vi jobbar med ramverket.
 
+###Berätta om din syn på modellering likt UML jämfört med verktyg som phpDocumentor. Fördelar, nackdelar, användningsområde?
+
+Jag tycker det är ett bra sätt att planera hur man ska bygga upp sin kod. Man får en överblick snabbt om vilka klasser och metoder osv som ska finnas, och hur dom är kopplade. Men jag tycker det är svårt att göra det själv, har inte så bra koll på när vilka pilar man ska använda för att det ska se rätt ut.
+
+###Vad tycker du om konceptet make doc?
+
+Ska jag vara helt ärlig så förstår jag inte riktigt vad man använder det till. Eller vad som händer när man skriver make doc. Men vad jag har läst och vad som har sagts på föreläsningar så verkar det som en bra grej eftersom den genererar dokumentationen på något sätt.
+
+###Hur känns det att skriva kod utanför och inuti ramverket, ser du fördelar och nackdelar med de olika sätten?
+
+Jag tycker att det känns bra, lite jobbigt som sagt med att skriva koden i ramverket då man måste skriva kod i så många olika filer vilket gör det svårt efter en stund om man har många olika routes och template filer. Men det är också bra att lära sig det då man får en bra struktur på sin kod och när man jobbat med det mer kan lära sig vart de delarna man ska lägga till eller ändra på ligger.
+
+###Vilken är din TIL för detta kmom?
+
+Min TIL är hur namespaces fungerar och hur man kan använda dom.
 
 Kmom03
 -------------------------
