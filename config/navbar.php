@@ -38,4 +38,9 @@ return [
         "url" => "landing",
         "title" => "Gissa mitt nummer",
     ],
+    [
+        "text" => "Tärning 100",
+        "url" => "100",
+        "title" => "Spela tärning 100",
+    ],
 ];

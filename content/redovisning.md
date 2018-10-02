@@ -54,10 +54,29 @@ Min TIL är hur namespaces fungerar och hur man kan använda dom.
 
 Kmom03
 -------------------------
+###Har du tidigare erfarenheter av att skriva kod som testar annan kod?
 
-Här är redovisningstexten
+Ja, vi gjorde ungefär samma sak i OOPython. Där testade vi också våran kod på ett liknande sätt. Den stora skillnaden var att man kunde inte se hur mycket codecoverage man hade på sin kod, vilket jag tycker är väldigt bra att man kan göra nu.
 
+###Hur ser du på begreppen enhetstestning och att skriva testbar kod?
 
+Jag tycker att det kan vara bra saker att göra, så att man vet att om man gör vissa saker med koden så returnerar den rätt saker. Hur testbar kod ser ut vet jag inte riktigt men jag märkte att det var vissa grejer som var väldigt svåra att testa i min egen kod, så jag får nog ta och lära mig hur man gör det bättre och hur man gör så att koden blir lättare att testa i slutändan.
+
+###Förklara kort begreppen white/grey/black box testing samt positiva och negativa tester, med dina egna ord.
+
+White box testing kan man säga är när man testar det som händer inuti applikationen. Men bestämmer hur man ska testa sig genom koden och vilka resultat du ska få för att testet ska klara sig. Black box testing är när man testar kodens funktionalitet utan att kolla på det som händer inuti applikationen. Grey box testing är ungefär som en blandning utav white och black box testing. Positiva tester gör man för att testa så att koden verkligen gör det som man vill att den ska utföra. Negativa tester är när man testar så att något går fel. Man kan skicka in fel parametrar till en funktion till exempel och då vill man att det ska hanteras på ett visst sätt, gör det det så går testet igenom.
+
+###Berätta om hur du löste uppgiften med Tärningsspelet 100, hur du tänkte, planerade och utförde uppgiften samt hur du organiserade din kod?
+
+Jag började tänka på vilka klasser jag vill ha och jobba med. Jag kom fram till att ha en klass som har koll på själva tärningen, det slumpmässiga numret och returnera det rummet. Så min Dice klass blev inte så jättestor. Sen ville jag också en klass som höll på poängställningen och all annan spellogik. Det mest av min kod ligger i klasserna vilket gör att man router fil inte är så full med kod utan bara en if-sats som kollar vilken knapp i formuläret man klickar på och sedan skickar det vidare till en metod i klassen. Sen extendade jag Dice klassen i Game klassen så att jag kunde initiera ett Game objekt med ett nytt Dice objekt. Sen använde jag inte tex `$_POST` och liknande utan använda mig utav ramverkets egna sätt att hantera POST requests och liknande vilket gjorde det smidigare.
+
+###Hur väl lyckades du testa tärningsspelet 100?
+
+Jag tycker att jag lyckades hyfsat. Lyckades inte få 100%, sen vet jag inte riktigt hur jag ska testa Functions och Methods bättra samt hur man testar Classes och Traits. Men jag gjorde så bra jag kunde med den koden jag hade. Lyckades få fram en hel del tester iallafall. Tycker det var krångligt hur jag skulle göra min tester då jag hade en del if satser som kollade olika värden men det gick väl helt okej. Var vissa rader som jag inte listade ut hur jag skulle testa.
+
+###Vilken är din TIL för detta kmom?
+
+Min TIL för detta kursmomentet är hur PHPUnit funkar och hur man använder det för att testa sin kod.
 
 Kmom04
 -------------------------
