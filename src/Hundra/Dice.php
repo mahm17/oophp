@@ -28,6 +28,7 @@ class Dice
     public function throwDice()
     {
         $this->value = rand(1, 6);
+        $this->serie[] = $this->value;
     }
 
     /**

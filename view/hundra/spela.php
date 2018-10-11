@@ -32,4 +32,6 @@ namespace Anax\view;
     <?php } elseif ($game->savedScore[1] >= 100) { ?>
         <p>Datorn vann spelet! Klicka på starta om för att spela igen.</p>
     <?php } ?>
+    <pre><?= $game->printHistogram() ?></pre>
+
 </head>

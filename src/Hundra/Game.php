@@ -2,8 +2,10 @@
 
 namespace Mahm\Hundra;
 
-class Game extends Dice
+class Game extends Dice implements GameInterface
 {
+    use GameTrait;
+
     /**
     * @var array $playerScore The score before for one round
     * @var array $savedScore The total score
@@ -68,17 +70,32 @@ class Game extends Dice
             }
             return "Spelare 1 slog: " . $this->getDice();
         } elseif ($this->activePlayer[1] == 1) {
-            for ($i = 0; $i < 3; $i++) {
-                $this->throwDice();
-                $this->getScore();
-                if ($this->getDice() == 1) {
-                    $this->playerScore[1] = 0;
-                    $this->activePlayer[1] = 0;
-                    $this->activePlayer[0] = 1;
-                    return "Datorn slog en etta så turen går vidare och den förlorar sin poäng.";
+            if ($this->savedScore[1] > $this->savedScore[0]) {
+                for ($i = 0; $i < 5; $i++) {
+                    $this->throwDice();
+                    $this->getScore();
+                    if ($this->getDice() == 1) {
+                        $this->playerScore[1] = 0;
+                        $this->activePlayer[1] = 0;
+                        $this->activePlayer[0] = 1;
+                        return "Datorn slog en etta så turen går vidare och den förlorar sin poäng.";
+                    }
+                    $this->saveScore();
+                    return "Datorn slog sina 5 slag och har nu: " . $this->savedScore[1] . " poäng.";
                 }
-                $this->saveScore();
-                return "Datorn slog sina slag och har nu: " . $this->savedScore[1] . " poäng.";
+            } else {
+                for ($i = 0; $i < 3; $i++) {
+                    $this->throwDice();
+                    $this->getScore();
+                    if ($this->getDice() == 1) {
+                        $this->playerScore[1] = 0;
+                        $this->activePlayer[1] = 0;
+                        $this->activePlayer[0] = 1;
+                        return "Datorn slog en etta så turen går vidare och den förlorar sin poäng.";
+                    }
+                    $this->saveScore();
+                    return "Datorn slog sina 3 slag och har nu: " . $this->savedScore[1] . " poäng.";
+                }
             }
         }
     }

@@ -87,10 +87,21 @@ Här är redovisningstexten
 
 Kmom05
 -------------------------
+###Några reflektioner kring koden i övningen för PHP PDO och MySQL?
 
-Här är redovisningstexten
+Nej jag tyckte att allt flöt på bra. Var inte så svårt att förstå hur det funkade att ansluta sig till databasen och sedan utföra vissa SQL satser då det liknade det vi gjorde i databas kursen med express.
 
+###Hur gick det att överföra koden in i ramverket, stötte du på några utmaningar?
 
+Stötte inte på några större utmaningar utan allt flöt på bra. Det enda jag hade lite problem med var routesen för CRUD delen. Mina knappar funkade inte utan skickade mig bara till en 404 sida. Men sen ändrade jag routen till en any route istället för en GET eller POST route vilket löste problemet.
+
+###Berätta om din slutprodukt för filmdatabasen, gjorde du endast basfunktionaliteten eller lade du till extra features och hur tänkte du till kring användarvänligheten och din kodstruktur?
+
+Då jag har hamnat efter i kursmomenten så la jag bara till grundkraven. Hade jag haft mer tid på mig så hade jag försökt lägga till de optionella kraven också. Jag tänkte inte så mycket på själva strukturen utan gjorde ungefär så som i exemplet, den som jag skulle vilja ändra är väl att jag har rätt mycket kod i route filen nu som jag skulle kunna flytta till klasser istället. Men eftersom jag mest ville bli klar så fort som möjligt så blev det att koda i routen nu.
+
+###Vilken är din TIL för detta kmom?
+
+Min störta TIL är ju hur man använder PHP och PDO samt ramverket för att ansluta sig till en databas och hur man sen kan köra olika SQL satser. Sen lärde jag mig också hur man gör för att ansluta sig till en annan server i det här fallet studentservern.
 
 Kmom06
 -------------------------
