@@ -27,7 +27,7 @@ if (!$resultset) {
     <tr>
         <td><?= $id ?></td>
         <td><?= $row->id ?></td>
-        <td><img class="thumb" src="<?= $row->image ?>" style="width: 7em; height: 7em;"></td>
+        <td><img class="thumb" src="<?= substr($row->image, 3) ?>" style="width: 7em; height: 7em;"></td>
         <td><?= $row->title ?></td>
         <td><?= $row->year ?></td>
     </tr>

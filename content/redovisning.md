@@ -106,11 +106,56 @@ Min störta TIL är ju hur man använder PHP och PDO samt ramverket för att ans
 Kmom06
 -------------------------
 
-Här är redovisningstexten
+###Hur gick det att jobba med klassen för filtrering och formatting av texten?
 
+Jag tycker att det gick väldigt bra. Det enda som jag inte förstod i början var hur jag skulle lösa parse funktionen. Men sen kom jag på att man kunde använda en switch case sats som kollade vad man skickade med för parameter. Sen förstod jag inte riktigt hur alla dom andra funktionerna fungerade med det är för att jag inte är så insatt i regex vilket jag antar är det dom bygger på.
 
+###Berätta om din klasstruktur och kodstruktur för din lösning av webbsidor med innehåll i databasen.
+
+Jag använde mig inte utav några fler klasser för att lösa detta då jag kände att jag kunde lösa allt i route filen. Blev väl lite mycket kod i routen men jag kände att jag inte hade så mycket tid på mig att skriva en till klass med funktioner för att lösa allt, så gjorde på det sättet som kändes enklast. Hade jag haft mer tid på mig så hade jag nog försökt lägga allt i klasser för att route filen inte skulle bli så full på kod.
+
+###Hur känner du rent allmänt för den koden du skrivit i din me/redovisa, vad är bra och mindre bra? Ser du potential till refactoring av din kod och/eller behov av stöd från ramverket?
+
+Jag tycker att min kod blev helt okej. I dom tidigare uppgifterna så har jag försökt att använda mig av klasser så mycket som möjligt för att få routsen så “rena” som möjligt. Tycker ramverket har varit till bra hjälp när det kommer till formulär och liknande då det är väldigt enkelt att få ta tag på värden på det sättet med $app->request och liknande.
+
+###Vilken är din TIL för detta kmom?
+
+Min TIL för detta kmom är hur ett textfilter funkar och vad man kan använda det till. Kan verkligen se användningsområden för detta i framtiden.
 
 Kmom07-10
 -------------------------
 
-Här är redovisningstexten
+###Del 1
+
+###Krav 1
+
+Detta kravet gjorde det rätt enkelt att komma igång med projektet. Här fick man veta tydligt vad som skulle finnas på sin sida.
+
+Det som var svårast för mig var att komma på vad för produkt jag ville marknadsföra. Tillslut kom jag på något som jag inte vet om alla vet om, men det finns vissa klädmärken eller mode kanske man ska kalla det som har väldigt dyra kläder, tex Supreme, Bape, så jag har gjort en liten “flum” sida och inte direkt marknadsför just en specifik sort av produkter utan bara massa olika klädesplagg.  Jag ville skämta lite om dessa sorters kläder då dom inte borde kosta så mycket då dom ser ut som vilka kläder som helst nästan, så då kom jag på idén att försöka sälja billiga sådana kläder istället.
+
+###Krav 2
+
+Allt gick bra för mig på det här kravet då jag tog en kopia av min redovisa sida så hade alla filer på sin plats redan. Det enda jag behövde göra var mest att rensa upp bland filerna då det var många som inte används. För ER-diagrammet använde jag Workbench reverse engineering för att få en överblick av mina tabeller. Så det var inte några problem att lösa det då jag inte hade många tabeller att jobba med.
+
+Test delen däremot var lite problem. Jag kom på det rätt sent att jag har ju inga klasser jag jobbar med, utan använder mig mest av $app i min routes (vilket inte är det finaste eller det smartaste) men det var så jag gjorde och det jag tyckte gick snabbast då jag började rätt sent med projektet. Den enda klassen jag använder är en login klass för att kolla om man är inloggad som admin eller inte, och den har bara en funktion. Så jag löste test till den funktionen iallafall. Sen hade jag velat testa min TextFilter klass också men hade inte tid över till att göra det.
+
+Make doc tror jag inte var några problem då allt ska ha varit fixat på redovisa sidan. Om jag inte har missat något.
+
+###Krav 3
+
+På det här kravet använde jag mig som sagt av en klass som kollar ifall man är inloggad som admin genom att ändra värdet i en array från 0 om man inte är utloggad till 1 om man är inloggad. Sen startar jag även en session när man går in i min login route så att jag kan spara det värdet även om man går in på andra routes. Så när man är inloggade så valde jag att istället för att göra en sorts admin sida som man gjorde i kmom06 att ha länkar på produkt och blogg sidan där man kan lägga till, redigera eller ta bort saker. Är man inte inloggad så syns inte dessa länkar. Jag vet inte riktigt vad som kunde varit bäst att ha en tabell som admin eller som jag har att ha länkar som bara funkar om du är admin. Jag tycker att det blev rätt bra på mitt sätt ändå. Det krångliga här var dock att få markdown att funka när man redigerar inlägg och lägger till nya. Men löste detta efter lite funderande genom att man får skriva om man tex vill ha en header i namnet på en produkt så parsas det senare i vyn.
+
+###Del 2
+
+Jag tycker att projektet har gått helt okej. Jag hade gärna velat komma igång tidigare så att jag kunde löst några av extra kraven. Jag tycker att det var en bra svårighetsgrad på det som behövdes göras för att få godkänt, vissa delar var svårare än andra såklart men så ska det ju vara så att man får använda sig utav det man har jobbat med tidigare. Är lite besviken på mig själv då jag inte har använt mig av klasser på ett sådant sätt som jag ville utan har mest använt mig utav det som finns i ramverket. Det som tog mest tid för mig måste nog ha varit CRUD delen. Det är väldigt mycket kod som ska in och som man måste hålla koll på. Speciellt när man måste göra CRUD för både produkter och blogginlägg. Men det funkade tillslut.
+
+Jag tycker att det har varit ett rimligt projekt då man har fått använde sig av mycket av det som man har lärt sig tidigare i kursen. Tycker även det är kul när man får fundera själv på vad man vill lägga in på sidan.
+
+
+###Del 3
+
+Jag tycker att den här kursen har varit väldigt rolig och lärorik. Vissa delar har varit svåra att komma genom som tex kmom03 och 04 som jag tyckte tog extra lång tid då det var väldigt mycket man skulle göra i dom, speciellt kmom03. Detta är också anledningen till att jag inte har gjort färdigt kmom04 än, jag ville inte hamna efter så mycket så hoppade över det och gick vidare till 05 istället vilket gick mycket bättre. Jag ska göra 04 så fort jag får tid att göra den.
+
+Föreläsningar har varit till stor hjälp när det kommer till att lösa uppgifterna. Men det som jag har använt mig mest utav under denna kursen är de videos som var länkade till varje kursmoment. Dom har verkligen hjälpt mig att ta mig genom kursmomenten, kändes bra när man kunde kolla på lite exempel på att lösa uppgifterna för att senare kunna göra om dom till sina egna lösningar. Jag är nöjd med denna kursen har lärt mig mycket som man kan använda sig utav i framtiden. Jag skulle definitivt rekommendera denna kurs till andra som är intresserade av antingen PHP eller objektorienterad programmering eller både och.
+
+Jag ger kursen 9/10.

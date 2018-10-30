@@ -48,4 +48,14 @@ return [
         "url" => "movies",
         "title" => "Visa alla filmer",
     ],
+    [
+        "text" => "Textfilter",
+        "url" => "filter",
+        "title" => "Textfilter",
+    ],
+    [
+        "text" => "Content",
+        "url" => "content",
+        "title" => "Alla Bloggposter",
+    ],
 ];
